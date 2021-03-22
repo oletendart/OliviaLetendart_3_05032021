@@ -2,74 +2,91 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8"/>
-    <title>Oh my food</title>
+    <title>OhMyFood</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="normalizer.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="tablet.css" media="screen and (min-width: 426px)" rel="stylesheet" type="text/css">
     <link href="desktop.css" media="screen and (min-width: 769px)" rel="stylesheet" type="text/css">
-
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/00351c5345.js"></script>
 </head>
 <body>
-    <header style="background-color: red;">
-        <h1>Oh my food</h1>
-        <form>
-            <label>
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" value="Paris, Bellevile">
-            </label>
-            <label>Réservez le menu qui vous convient</label>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href=""><button>Explorer nos restaurants</button></a>
-        </form>
-    </header>
-    <section style="background-color: blue;">
-        <h3>Fonctionnement</h3>
-       <ul>
-           <li><i class="fas fa-mobile-alt"></i>Choississez un restaurant</li>
-           <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
-           <li><i class="fas fa-store"></i>Dégutez au restaurant</li>
-       </ul>
-    </section>
-    <section style="background-color: green;">
-        <h3>Restaurants</h3>
-        <a href="">
-            <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" />
-            <span>Nouveau</span>
-            <h4>La palette du goût</h4>
-            <h5>Ménilmontant</h5>
-            <i class="far fa-heart"></i>
-        </a>
-        <a href="">
-            <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" />
-            <span>Nouveau</span>
-            <h4>La note enchantée</h4>
-            <h5>Charonne</h5>
-            <i class="far fa-heart"></i>
-        </a>
-        <a href="">
-            <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
-            <h4>A la française</h4>
-            <h5>Cité Rouge</h5>
-            <i class="far fa-heart"></i>
-        </a>
-        <a href="">
-            <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" />
-            <h4>Le délice des sens</h4>
-            <h5>Folie-Méricourt</h5>
-            <i class="far fa-heart"></i>
-        </a>
-    </section>
-    <footer style="background-color: lightsalmon;">
-        <h1>Oh my food</h1>
-        <ul>
-            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
-        </ul>
-    </footer>
+<header style="background-color: red;">
+    <a href="index.html"><h1>OhMyFood</h1></a>
+    <form>
+        <label>
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" value="Paris, Belleville">
+        </label>
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button>Explorer nos restaurants</button>
+    </form>
+</header>
+<section style="background-color: blue;">
+    <h3>Fonctionnement</h3>
+    <ul>
+        <li><i class="fas fa-mobile-alt"></i>Choississez un restaurant</li>
+        <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
+        <li><i class="fas fa-store"></i>Dégutez au restaurant</li>
+    </ul>
+</section>
+<section style="background-color: green;">
+    <h3>Restaurants</h3>
+    <a href="menu_one.html">
+        <figure>
+            <img alt="" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/>
+            <figcaption>
+                <h4>La palette du goût</h4>
+                <h5>Ménilmontant</h5>
+                <i class="far fa-heart"></i>
+                <span>Nouveau</span>
+            </figcaption>
+        </figure>
+    </a>
+
+    <a href="">
+        <figure>
+            <img alt="" src="images/stil-u2Lp8tXIcjw-unsplash.jpg"/>
+            <figcaption>
+                <h4>La note enchantée</h4>
+                <h5>Charonne</h5>
+                <i class="far fa-heart"></i>
+                <span>Nouveau</span>
+            </figcaption>
+        </figure>
+    </a>
+
+    <a href="">
+        <figure>
+            <img alt="" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"/>
+            <figcaption>
+                <h4>A la française</h4>
+                <h5>Cité Rouge</h5>
+                <i class="far fa-heart"></i>
+            </figcaption>
+        </figure>
+    </a>
+
+    <a href="">
+        <figure>
+            <img alt="" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/>
+            <figcaption>
+                <h4>Le délice des sens</h4>
+                <h5>Folie-Méricourt</h5>
+                <i class="far fa-heart"></i>
+            </figcaption>
+        </figure>
+    </a>
+</section>
+<footer style="background-color: lightsalmon;">
+    <h6>OhMyFood</h6>
+    <ul>
+        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+        <li>Mentions légales</li>
+        <li>Contact</li>
+    </ul>
+</footer>
 </body>
