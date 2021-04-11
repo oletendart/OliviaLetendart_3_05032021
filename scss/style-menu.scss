@@ -1,2 +1,13 @@
 @import "variables";
 @import "grid-menu";
+
+/* the image before the form */
+#background-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@import "form-menu";
+@import "footer";
+

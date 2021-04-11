@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* Grid body in the file menu.html */
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 1fr 200px;
   gap: 0 0;
   grid-template-areas: "header" "background-image" "form" "footer";
 }
@@ -22,6 +23,23 @@ form {
 
 footer {
   grid-area: footer;
+}
+
+/* the image before the form */
+#background-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Form the file menu.html */
+form {
+  padding: 0 0 0 20px;
+}
+
+/* footer for the multiple pages */
+footer {
+  padding: 30px 0 0 20px;
 }
 
 /*# sourceMappingURL=style-menu.css.map */
