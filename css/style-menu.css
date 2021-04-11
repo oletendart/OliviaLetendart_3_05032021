@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas: "header" "background-image" "form" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+img {
+  grid-area: background-image;
+}
+
+form {
+  grid-area: form;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*# sourceMappingURL=style-menu.css.map */
