@@ -1,5 +1,6 @@
-@import "test";
-
-body {
-  background-color: red;
-}
+@import "variables";
+@import "grid-index";
+@import "header-index";
+@import "form-index";
+@import "card-restaurant";
+@import "footer";
