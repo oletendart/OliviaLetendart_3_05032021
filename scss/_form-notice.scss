@@ -1,0 +1,10 @@
+/* First section in the file index.html */
+#form-notice {
+  padding: 20px;
+}
+#form-notice ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 20px;
+}

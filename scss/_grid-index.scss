@@ -2,24 +2,26 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px 400px 1fr 200px;
-  gap: 0 0;
   grid-template-areas:
     "header"
-    "section_one"
-    "section_two"
+    "restaurants"
+    "notice"
     "footer";
   background-color: red;
 }
+
 header {
   grid-area: header;
 }
+
 section:first-child {
-  grid-area: section_one;
+  grid-area: restaurants;
 }
+
 section:last-child {
-  grid-area: section_two;
+  grid-area: notice;
 }
+
 footer {
   grid-area: footer;
 }
@@ -28,27 +30,32 @@ footer {
 #card_restaurant {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 300px 300px 300px 300px;
+  grid-template-rows: auto repeat(4, 300px);
   gap: 20px 0;
   grid-template-areas:
-    "title_restaurant"
+    "restaurant_title"
     "restaurant_one"
     "restaurant_two"
     "restaurant_three"
     "restaurant_four";
 }
+
 #card_restaurant h3 {
-  grid-area: title_restaurant;
+  grid-area: restaurant_title;
 }
-#card_restaurant a:nth-child(0) {
+
+#card_restaurant a:nth-of-type(1) {
   grid-area: restaurant_one;
 }
-#card_restaurant a:nth-child(1) {
+
+#card_restaurant a:nth-of-type(2) {
   grid-area: restaurant_two;
 }
-#card_restaurant a:nth-child(2) {
+
+#card_restaurant a:nth-of-type(3) {
   grid-area: restaurant_three;
 }
-#card_restaurant a:nth-child(3) {
-  grid-area: restaurant-four;
+
+#card_restaurant a:nth-of-type(4) {
+  grid-area: restaurant_four;
 }

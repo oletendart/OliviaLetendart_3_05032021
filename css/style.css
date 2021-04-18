@@ -4,9 +4,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px 400px 1fr 200px;
-  gap: 0 0;
-  grid-template-areas: "header" "section_one" "section_two" "footer";
+  grid-template-areas: "header" "restaurants" "notice" "footer";
   background-color: red;
 }
 
@@ -15,11 +13,11 @@ header {
 }
 
 section:first-child {
-  grid-area: section_one;
+  grid-area: restaurants;
 }
 
 section:last-child {
-  grid-area: section_two;
+  grid-area: notice;
 }
 
 footer {
@@ -30,34 +28,35 @@ footer {
 #card_restaurant {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 300px 300px 300px 300px;
+  grid-template-rows: auto repeat(4, 300px);
   gap: 20px 0;
-  grid-template-areas: "title_restaurant" "restaurant_one" "restaurant_two" "restaurant_three" "restaurant_four";
+  grid-template-areas: "restaurant_title" "restaurant_one" "restaurant_two" "restaurant_three" "restaurant_four";
 }
 
 #card_restaurant h3 {
-  grid-area: title_restaurant;
+  grid-area: restaurant_title;
 }
 
-#card_restaurant a:nth-child(0) {
+#card_restaurant a:nth-of-type(1) {
   grid-area: restaurant_one;
 }
 
-#card_restaurant a:nth-child(1) {
+#card_restaurant a:nth-of-type(2) {
   grid-area: restaurant_two;
 }
 
-#card_restaurant a:nth-child(2) {
+#card_restaurant a:nth-of-type(3) {
   grid-area: restaurant_three;
 }
 
-#card_restaurant a:nth-child(3) {
-  grid-area: restaurant-four;
+#card_restaurant a:nth-of-type(4) {
+  grid-area: restaurant_four;
 }
 
 /* Header */
 header {
   text-align: center;
+  padding: 20px;
 }
 
 header h2 {
@@ -69,25 +68,53 @@ header button {
 }
 
 /* First section in the file index.html */
-#form-index {
-  padding: 50px 0 0 20px;
+#form-notice {
+  padding: 20px;
+}
+
+#form-notice ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 20px;
 }
 
 /* Second section in the file index.html */
 #card_restaurant figure {
-  width: 200px;
-  height: auto;
+  height: 100%;
+  position: relative;
+}
+
+#card_restaurant figcaption {
+  height: 70px;
+  padding: 10px;
+}
+
+#card_restaurant i {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  transform: translateY(50%);
+  height: 20px;
+  font-size: 20px;
+}
+
+#card_restaurant span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
 }
 
 #card_restaurant img {
-  width: 150px;
-  height: 150px;
   object-fit: cover;
+  height: 70%;
+  width: 100%;
 }
 
 /* footer for the multiple pages */
 footer {
-  padding: 30px 0 0 20px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

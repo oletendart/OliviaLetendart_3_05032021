@@ -1,10 +1,28 @@
 /* Second section in the file index.html */
 #card_restaurant figure {
-  width: 200px;
-  height: auto;
+  height: 100%;
+  position: relative;
+}
+#card_restaurant figcaption {
+  height: 70px;
+  padding: 10px;
+}
+#card_restaurant i {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  transform: translateY(50%);
+  height: 20px;
+  font-size: 20px;
+}
+#card_restaurant span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
 }
 #card_restaurant img {
-  width: 150px;
-  height: 150px;
   object-fit: cover;
+  height: 70%;
+  width: 100%;
 }
