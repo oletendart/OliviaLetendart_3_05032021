@@ -1,0 +1,43 @@
+@import "_variables.scss";
+
+/* Font family */
+h1 {
+  font-family: $police-logo;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+h2, h3 {
+  font-family: $police-text;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+h4 {
+  font-family: $police-text;
+  font-size: 1.2rem;
+}
+h5 {
+  font-family: $police-text;
+  font-size: 1.2rem;
+}
+h6 {
+  font-family: $police-logo;
+  font-size: 1.4rem;
+}
+p {
+  font-family: $police-text;
+  font-size: 1.4rem;
+}
+button {
+  font-size: 1.5rem;
+}
+li {
+  font-size: 1.4rem;
+}
+footer li {
+  font-size: 1.2rem;
+}
+span {
+  font-size: 1.2rem;
+}
+

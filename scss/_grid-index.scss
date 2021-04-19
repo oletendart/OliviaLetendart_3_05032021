@@ -30,7 +30,7 @@ footer {
 #card_restaurant {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto repeat(4, 300px);
+  grid-template-rows: auto repeat(4, 270px);
   gap: 20px 0;
   grid-template-areas:
     "restaurant_title"

@@ -9,4 +9,10 @@ header h2 {
 header button {
   margin-top: 50px;
 }
+button {
+  border-radius: 30px;
+  background: linear-gradient(to right, $color-secondary, $color-primary);
+  height: 60px;
+  width: 280px;
+}
 

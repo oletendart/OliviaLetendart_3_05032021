@@ -1,3 +1,5 @@
+@import "variables";
+
 /* First section in the file index.html */
 #form-notice {
   padding: 20px;
@@ -7,4 +9,46 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 50px);
   grid-gap: 20px;
+}
+#form-notice li {
+  position: relative;
+  background-color: chartreuse;
+  line-height: 50px;
+  padding: 0 30px;
+}
+#form-notice li:first-child::before {
+  position: absolute;
+  content: "1";
+  background-color: $color-primary;
+  border-radius: 50%;
+  height: 30px;
+  left: -15px;
+  top: 10px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#form-notice li:nth-of-type(2)::before {
+  position: absolute;
+  content: "2";
+  background-color: $color-primary;
+  border-radius: 50%;
+  height: 30px;
+  left: -15px;
+  top: 10px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#form-notice li:last-child::before {
+  position: absolute;
+  content: "3";
+  background-color: $color-primary;
+  border-radius: 50%;
+  height: 30px;
+  left: -15px;
+  top: 10px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
 }

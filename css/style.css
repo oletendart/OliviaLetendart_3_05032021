@@ -1,5 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+h1 {
+  font-family: "Shrikhand, sans-serif";
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+h2, h3 {
+  font-family: "Roboto, sans-serif";
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Roboto, sans-serif";
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-family: "Roboto, sans-serif";
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-family: "Shrikhand, sans-serif";
+  font-size: 1.4rem;
+}
+
+p {
+  font-family: "Roboto, sans-serif";
+  font-size: 1.4rem;
+}
+
+button {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.4rem;
+}
+
+footer li {
+  font-size: 1.2rem;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
 /*  Grod body in the file index.html */
 body {
   display: grid;
@@ -28,7 +82,7 @@ footer {
 #card_restaurant {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto repeat(4, 300px);
+  grid-template-rows: auto repeat(4, 270px);
   gap: 20px 0;
   grid-template-areas: "restaurant_title" "restaurant_one" "restaurant_two" "restaurant_three" "restaurant_four";
 }
@@ -67,6 +121,13 @@ header button {
   margin-top: 50px;
 }
 
+button {
+  border-radius: 30px;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  height: 60px;
+  width: 280px;
+}
+
 /* First section in the file index.html */
 #form-notice {
   padding: 20px;
@@ -79,10 +140,62 @@ header button {
   grid-gap: 20px;
 }
 
+#form-notice li {
+  position: relative;
+  background-color: chartreuse;
+  line-height: 50px;
+  padding: 0 30px;
+}
+
+#form-notice li:first-child::before {
+  position: absolute;
+  content: "1";
+  background-color: #9356DC;
+  border-radius: 50%;
+  height: 30px;
+  left: -15px;
+  top: 10px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#form-notice li:nth-of-type(2)::before {
+  position: absolute;
+  content: "2";
+  background-color: #9356DC;
+  border-radius: 50%;
+  height: 30px;
+  left: -15px;
+  top: 10px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#form-notice li:last-child::before {
+  position: absolute;
+  content: "3";
+  background-color: #9356DC;
+  border-radius: 50%;
+  height: 30px;
+  left: -15px;
+  top: 10px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
 /* Second section in the file index.html */
+#card_restaurant {
+  padding: 20px;
+}
+
 #card_restaurant figure {
   height: 100%;
   position: relative;
+  border-radius: 20px;
+  background-color: orange;
 }
 
 #card_restaurant figcaption {
@@ -94,22 +207,24 @@ header button {
   position: absolute;
   right: 20px;
   bottom: 35px;
-  transform: translateY(50%);
-  height: 20px;
-  font-size: 20px;
+  transform: translateY(30%);
+  height: 25px;
+  font-size: 25px;
 }
 
 #card_restaurant span {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  padding: 5px;
+  right: 20px;
   background-color: red;
 }
 
 #card_restaurant img {
   object-fit: cover;
-  height: 70%;
+  height: calc(100% - 70px);
   width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 /* footer for the multiple pages */

@@ -1,7 +1,12 @@
 /* Second section in the file index.html */
+#card_restaurant {
+  padding: 20px;
+}
 #card_restaurant figure {
   height: 100%;
   position: relative;
+  border-radius: 20px;
+  background-color: orange;
 }
 #card_restaurant figcaption {
   height: 70px;
@@ -11,18 +16,20 @@
   position: absolute;
   right: 20px;
   bottom: 35px;
-  transform: translateY(50%);
-  height: 20px;
-  font-size: 20px;
+  transform: translateY(30%);
+  height: 25px;
+  font-size: 25px;
 }
 #card_restaurant span {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  padding: 5px;
+  right: 20px;
   background-color: red;
 }
 #card_restaurant img {
   object-fit: cover;
-  height: 70%;
+  height: calc(100% - 70px);
   width: 100%;
+  border-radius: 20px 20px 0 0;
 }
