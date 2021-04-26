@@ -19,25 +19,35 @@ h4 {
 h5 {
   font-family: $police-text;
   font-size: 1.2rem;
+  font-weight: lighter;
 }
 h6 {
   font-family: $police-logo;
   font-size: 1.4rem;
+  text-transform: lowercase;
 }
 p {
   font-family: $police-text;
   font-size: 1.4rem;
 }
 button {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-family: $police-text;
 }
 li {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-family: $police-text;
 }
 footer li {
   font-size: 1.2rem;
+  font-family: $police-text;
 }
 span {
   font-size: 1.2rem;
+  font-family: $police-text;
+}
+input {
+  font-size: 1.2rem;
+  font-family: $police-text;
 }
 

@@ -2,3 +2,6 @@
 form {
   padding: 20px;
 }
+form div div:last-child {
+  visibility: hidden;
+}

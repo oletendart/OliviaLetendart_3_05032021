@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Grid body in the file menu.html */
 body {
   display: grid;
@@ -25,6 +25,22 @@ footer {
   grid-area: footer;
 }
 
+/* Header menu */
+header {
+  position: relative;
+}
+
+header i {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+header h1 {
+  margin: 0 auto;
+  width: 50%;
+}
+
 /* the image before the form */
 #background-image {
   height: 200px;
@@ -37,9 +53,23 @@ form {
   padding: 20px;
 }
 
+form div div:last-child {
+  visibility: hidden;
+}
+
 /* footer for the multiple pages */
 footer {
   padding: 20px;
+}
+
+footer > h6 {
+  padding: 0 0 20px 0;
+}
+
+footer li i {
+  width: 35px;
+  text-align: center;
+  padding: 0 5px;
 }
 
 /*# sourceMappingURL=style-menu.css.map */
