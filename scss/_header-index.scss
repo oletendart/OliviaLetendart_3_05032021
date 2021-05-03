@@ -1,19 +1,30 @@
 /* Header */
 header {
   text-align: center;
-  padding: 20px;
+  background-color: #F5F5F5;
+}
+header form {
+  padding: 20px 0 60px;
+}
+header h1 {
+  background-color: #FFF;
 }
 header h2 {
   padding-top: 50px;
+}
+header p {
+  color: #808080;
 }
 header button {
   margin-top: 50px;
 }
 button {
   border-radius: 30px;
-  background: linear-gradient(to right, $color-secondary, $color-primary);
+  background: linear-gradient(to bottom, $color-secondary, $color-primary);
   height: 60px;
   width: 280px;
   border: none;
+  color: white;
+  box-shadow: 0 5px 10px silver;
 }
 

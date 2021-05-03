@@ -1,12 +1,14 @@
 /* Second section in the file index.html */
 #card_restaurant {
   padding: 20px;
+  background-color: #F5F5F5;
 }
 #card_restaurant figure {
   height: 100%;
   position: relative;
   border-radius: 20px;
-  background-color: orange;
+  background-color: #FFF;
+  box-shadow: 0 5px 10px silver;
 }
 #card_restaurant figcaption {
   height: 70px;
@@ -25,7 +27,8 @@
   top: 20px;
   padding: 5px;
   right: 20px;
-  background-color: red;
+  background-color: $color-tertiary;
+  color: #50796F;
 }
 #card_restaurant img {
   object-fit: cover;

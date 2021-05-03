@@ -1,6 +1,8 @@
 @import "variables";
+@import "fontmenu";
 @import "grid-menu";
 @import "header-menu";
+@import "gridcardmenu";
 
 /* the image before the form */
 #background-image {
@@ -9,6 +11,6 @@
   object-fit: cover;
 }
 
-@import "form-menu";
+@import "article-menu";
 @import "footer";
 

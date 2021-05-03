@@ -33,6 +33,7 @@ h6 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.4rem;
   text-transform: lowercase;
+  font-weight: lighter;
 }
 
 p {
@@ -65,7 +66,7 @@ input {
   font-family: "Roboto", sans-serif;
 }
 
-/*  Grod body in the file index.html */
+/*  Grid body in the file index.html */
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -121,11 +122,23 @@ footer {
 /* Header */
 header {
   text-align: center;
-  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+header form {
+  padding: 20px 0 60px;
+}
+
+header h1 {
+  background-color: #FFF;
 }
 
 header h2 {
   padding-top: 50px;
+}
+
+header p {
+  color: #808080;
 }
 
 header button {
@@ -134,15 +147,18 @@ header button {
 
 button {
   border-radius: 30px;
-  background: linear-gradient(to right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   height: 60px;
   width: 280px;
   border: none;
+  color: white;
+  box-shadow: 0 5px 10px silver;
 }
 
 /* First section in the file index.html */
 #form-notice {
-  padding: 20px;
+  padding: 60px 20px;
+  background-color: #FFF;
 }
 
 #form-notice h3 {
@@ -152,20 +168,22 @@ button {
 #form-notice ul {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 50px);
+  grid-template-rows: repeat(3, 70px);
   grid-gap: 20px;
 }
 
 #form-notice li {
   position: relative;
-  background-color: chartreuse;
-  line-height: 50px;
+  background-color: #F5F5F5;
+  line-height: 70px;
   padding: 0 30px;
   border-radius: 10px;
+  box-shadow: 0 5px 10px silver;
 }
 
 #form-notice li i {
   padding: 0 10px;
+  color: gray;
 }
 
 #form-notice li:first-child::before {
@@ -179,6 +197,8 @@ button {
   width: 30px;
   text-align: center;
   line-height: 30px;
+  color: white;
+  font-size: 12px;
 }
 
 #form-notice li:nth-of-type(2)::before {
@@ -192,6 +212,8 @@ button {
   width: 30px;
   text-align: center;
   line-height: 30px;
+  color: white;
+  font-size: 12px;
 }
 
 #form-notice li:last-child::before {
@@ -205,18 +227,22 @@ button {
   width: 30px;
   text-align: center;
   line-height: 30px;
+  color: white;
+  font-size: 12px;
 }
 
 /* Second section in the file index.html */
 #card_restaurant {
   padding: 20px;
+  background-color: #F5F5F5;
 }
 
 #card_restaurant figure {
   height: 100%;
   position: relative;
   border-radius: 20px;
-  background-color: orange;
+  background-color: #FFF;
+  box-shadow: 0 5px 10px silver;
 }
 
 #card_restaurant figcaption {
@@ -238,7 +264,8 @@ button {
   top: 20px;
   padding: 5px;
   right: 20px;
-  background-color: red;
+  background-color: #99E2D0;
+  color: #50796F;
 }
 
 #card_restaurant img {
@@ -251,9 +278,11 @@ button {
 /* footer for the multiple pages */
 footer {
   padding: 20px;
+  background-color: #303030;
+  color: white;
 }
 
-footer > h6 {
+footer > h6, h5 {
   padding: 0 0 20px 0;
 }
 

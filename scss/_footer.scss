@@ -1,8 +1,10 @@
 /* footer for the multiple pages */
 footer {
   padding: 20px;
+  background-color: #303030;
+  color: white;
 }
-footer > h6 {
+footer > h6, h5 {
   padding: 0 0 20px 0;
 }
 footer li i {

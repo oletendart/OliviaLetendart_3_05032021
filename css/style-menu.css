@@ -1,10 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Font family for the menu*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+form h1 {
+  font-size: 1.8rem;
+  text-transform: none;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+
+h6 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.4rem;
+  text-transform: lowercase;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+footer li {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+span {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
 /* Grid body in the file menu.html */
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 200px 1fr 200px;
+  grid-template-rows: 70px 200px 1fr 200px;
   gap: 0 0;
   grid-template-areas: "header" "background-image" "form" "footer";
 }
@@ -30,17 +108,23 @@ header {
   position: relative;
 }
 
-header i {
+header a:first-child {
   position: absolute;
-  top: 10px;
-  left: 5px;
 }
 
-header h1 {
+header i {
+  top: 15px;
+  left: 15px;
+  height: 25px;
+  font-size: 25px;
+}
+
+header a h1 {
   margin: 0 auto;
   width: 50%;
 }
 
+/* Grid in the form the different menu */
 /* the image before the form */
 #background-image {
   height: 200px;
@@ -48,21 +132,41 @@ header h1 {
   object-fit: cover;
 }
 
-/* Form the file menu.html */
-form {
+/* article the file menu.html */
+article {
   padding: 20px;
+  position: relative;
 }
 
-form div div:last-child {
-  visibility: hidden;
+article i {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  height: 25px;
+  font-size: 25px;
+}
+
+article h1 {
+  padding: 0 0 30px 0;
+}
+
+article h2 {
+  border-bottom: solid #99E2D0 4px;
+  width: 15%;
+}
+
+article .d-none {
+  display: none;
 }
 
 /* footer for the multiple pages */
 footer {
   padding: 20px;
+  background-color: #303030;
+  color: white;
 }
 
-footer > h6 {
+footer > h6, h5 {
   padding: 0 0 20px 0;
 }
 
