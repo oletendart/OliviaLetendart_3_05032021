@@ -35,7 +35,7 @@ article p {
   text-align: center;
 }
 article button {
-  display: flex;
+  display: block;
   margin: 50px auto;
   border-radius: 30px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -44,7 +44,4 @@ article button {
   border: none;
   color: white;
   box-shadow: 0 5px 10px silver;
-  justify-content: center;
-  line-height: 60px;
-  transform: translateY(-50%);
 }

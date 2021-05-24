@@ -28,9 +28,10 @@ footer {
 article div {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(2, 60px);
-  grid-template-areas: "title price"
+  grid-template-rows: repeat(2, 40px);
+  grid-template-areas: "title title"
 "description price";
+  align-items: center;
 }
 article div h3 {
   grid-area: title;
@@ -40,4 +41,6 @@ article div h4 {
 }
 article div p {
   grid-area: price;
+  line-height: 40px;
+  text-align: right;
 }

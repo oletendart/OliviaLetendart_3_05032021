@@ -9,6 +9,7 @@ header form {
 header form label {
   background-color: lightgray;
   display: block;
+  box-shadow: inset 0 5px 10px grey;
 }
 header form label i {
   width: 30%;
@@ -21,7 +22,6 @@ header form input {
 }
 header h1 {
   background-color: #FFF;
-  border-bottom: 1px solid gray;
 }
 header h2 {
   padding-top: 50px;
