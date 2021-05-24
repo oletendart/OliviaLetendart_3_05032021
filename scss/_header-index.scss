@@ -4,10 +4,24 @@ header {
   background-color: #F5F5F5;
 }
 header form {
-  padding: 20px 0 60px;
+  padding: 0 0 60px 0;
+}
+header form label {
+  background-color: lightgray;
+  display: block;
+}
+header form label i {
+  width: 30%;
+  text-align: right;
+}
+header form input {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
 }
 header h1 {
   background-color: #FFF;
+  border-bottom: 1px solid gray;
 }
 header h2 {
   padding-top: 50px;

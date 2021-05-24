@@ -11,6 +11,11 @@
   object-fit: cover;
 }
 
+/* button hover */
+button:hover {
+  box-shadow: 0 5px 2px silver;
+  opacity: 0.6;
+}
 @import "article-menu";
 @import "footer";
 
