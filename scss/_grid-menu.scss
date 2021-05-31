@@ -25,7 +25,7 @@ footer {
 
 /* Grid the card in the menu */
 
-article div {
+article .card-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(2, 40px);
