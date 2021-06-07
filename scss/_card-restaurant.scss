@@ -22,12 +22,31 @@
   height: 25px;
   font-size: 25px;
 }
-#card_restaurant i:hover {
-  background-color: #9356DC;
+
+#card_restaurant .whole-not-hover:hover:after {
+  content: '\f004';
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-background-clip: text;
+  background: linear-gradient($color-primary, $color-secondary);
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 /* animation heart
  */
-
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 #card_restaurant span {
   position: absolute;
