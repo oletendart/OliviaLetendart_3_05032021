@@ -66,7 +66,7 @@ article .card-content {
 
 article .card-check {
   //display: none;
-  width: 0%;
+  width: 0;
   opacity: 0;
   height: 100px;
   margin: 10px 0;
@@ -103,7 +103,22 @@ article .card-check {
   width: 30px;
   line-height: 30px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  border: dashed 2px white;
+  animation: rotate-center 1s ease-in-out both;
+}
+/* animation rotate center */
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .card:hover .card-content {

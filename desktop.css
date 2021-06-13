@@ -1,0 +1,32 @@
+/* CSS for the index.html */
+header form label i {
+    width: 0;
+    padding: 0 10px;
+}
+#form-notice {
+    max-width: 1260px;
+    width: 100%;
+    margin: auto;
+}
+#card_restaurant {
+    width: 100%;
+    padding: 20px 321px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(2, 270px);
+    grid-gap: 20px 20px;
+    grid-template-areas:
+    "restaurant_title restaurant_title"
+    "restaurant_one restaurant_two"
+    "restaurant_three restaurant_four";
+}
+footer {
+    width: 100%;
+    padding: 20px 321px;
+    margin: auto;
+}
+
+/* CSS for the menu.html */
+article {
+    padding: 20px 321px;
+}
