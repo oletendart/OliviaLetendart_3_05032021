@@ -1,3 +1,4 @@
+
 /* CSS for the index.html */
 header form label i {
     width: 0;
@@ -27,6 +28,16 @@ footer {
 }
 
 /* CSS for the menu.html */
+
 article {
     padding: 20px 321px;
+}
+/* CSS Media Queries */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #card_restaurant {
+        padding: 20px 121px;
+    }
+    article {
+        padding: 20px 121px;
+    }
 }

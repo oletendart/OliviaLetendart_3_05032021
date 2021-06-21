@@ -42,7 +42,7 @@ article ul div {
 
 /* Animation slide top */
 article .card-content {
-  background-color: red;
+  box-shadow: 0 5px 10px silver;
   padding: 10px 20px;
   margin: 10px 0;
   width: 100%;
@@ -65,7 +65,6 @@ article .card-content {
 /* Fin animation */
 
 article .card-check {
-  //display: none;
   width: 0;
   opacity: 0;
   height: 100px;
@@ -73,11 +72,12 @@ article .card-check {
 }
 
 .card:hover .card-check {
-  display: block;
-  background-color: green;
+  display: flex;
+  box-shadow: 0 5px 10px silver;
+  background-color: $color-tertiary;
   border-radius: 0 20px 20px 0;
-
-
+  justify-content: center;
+  align-items: center;
   animation: slide-in-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   position: relative;
 }
@@ -86,27 +86,22 @@ article .card-check {
 @keyframes slide-in-right {
   0% {
     width: 0;
-    //transform: translateX(1000px);
     opacity: 1;
   }
   100% {
-    width: 30%;
-    //transform: translateX(0);
+    width: 20%;
     opacity: 1;
   }
 }
 
 .card:hover .card-check i {
-  position: absolute;
-  color: white;
+  color: $color-tertiary;
+  background-color: white;
   height: 30px;
   width: 30px;
   line-height: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
   border-radius: 30px;
-  border: dashed 2px white;
   animation: rotate-center 1s ease-in-out both;
 }
 /* animation rotate center */

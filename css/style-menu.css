@@ -209,7 +209,7 @@ article ul div {
 
 /* Animation slide top */
 article .card-content {
-  background-color: red;
+  box-shadow: 0 5px 10px silver;
   padding: 10px 20px;
   margin: 10px 0;
   width: 100%;
@@ -237,9 +237,12 @@ article .card-check {
 }
 
 .card:hover .card-check {
-  display: block;
-  background-color: green;
+  display: flex;
+  box-shadow: 0 5px 10px silver;
+  background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
+  justify-content: center;
+  align-items: center;
   animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   position: relative;
 }
@@ -251,21 +254,18 @@ article .card-check {
     opacity: 1;
   }
   100% {
-    width: 30%;
+    width: 20%;
     opacity: 1;
   }
 }
 .card:hover .card-check i {
-  position: absolute;
-  color: white;
+  color: #99E2D0;
+  background-color: white;
   height: 30px;
   width: 30px;
   line-height: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
   border-radius: 30px;
-  border: dashed 2px white;
   animation: rotate-center 1s ease-in-out both;
 }
 
