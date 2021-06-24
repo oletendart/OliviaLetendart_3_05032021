@@ -52,3 +52,13 @@ input {
   font-family: $police-text;
 }
 
+/* media queries 320px */
+@media screen and (max-width: 321px) {
+  li {
+    font-size: 1rem;
+  }
+  input {
+    font-size: 1rem;
+  }
+}
+

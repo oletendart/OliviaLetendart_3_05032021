@@ -67,6 +67,16 @@ input {
   font-family: "Roboto", sans-serif;
 }
 
+/* media queries 320px */
+@media screen and (max-width: 321px) {
+  li {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+}
 /*  Grid body in the file index.html */
 body {
   display: grid;

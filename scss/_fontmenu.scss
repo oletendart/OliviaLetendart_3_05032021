@@ -35,6 +35,10 @@ h5 {
   font-weight: lighter;
   text-transform: lowercase;
 }
+footer h5 {
+  font-family: $police-logo;
+  font-size: 1.4rem;
+}
 h6 {
   font-family: $police-logo;
   font-size: 1.4rem;
@@ -64,4 +68,14 @@ span {
 input {
   font-size: 1.2rem;
   font-family: $police-text;
+}
+
+/* media queries 320px */
+@media screen and (max-width: 321px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  article h1 {
+    font-size: 1.6rem;
+  }
 }
