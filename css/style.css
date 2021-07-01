@@ -209,10 +209,10 @@ button {
   box-shadow: 0 5px 10px silver;
 }
 
-#form-notice li:last-child {
+#form-notice li:hover {
   background-color: #ECE1FA;
 }
-#form-notice li:last-child i {
+#form-notice li:hover i {
   color: #9356DC;
 }
 
